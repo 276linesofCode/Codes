@@ -28,6 +28,8 @@ Research Papers -
 1. https://www.irjet.net/archives/V3/i5/IRJET-V3I5190.pdf
 1. https://diuf.unifr.ch/main/diva/sites/diuf.unifr.ch.main.diva/files/joomla_reportForrer.pdf
 1. http://www.eejournal.ktu.lt/index.php/elt/article/viewFile/13749/7276
+1. http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.219.2046&rep=rep1&type=pdf
+1. http://airccse.org/journal/avc/papers/2315avc02.pdf
 
 
 Tutorials - 
