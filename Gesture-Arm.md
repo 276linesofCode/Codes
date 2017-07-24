@@ -35,3 +35,7 @@ Tutorials -
 1. http://www.instructables.com/id/Gesture-Controlled-Robotic-Arm/
 1. http://electronicsforu.com/electronics-projects/hardware-diy/wireless-gesture-controlled-robot
 1. http://nevonprojects.com/hand-motion-controlled-robotic-arm/
+
+
+
+My Idea - An arm that grabs stuff and keeps it at a particular location.
