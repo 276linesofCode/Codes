@@ -4,6 +4,7 @@ Ideas -
 1. Vision based imitation
 1. Object Grabbing using image analysis
 1. Basic responses to humans like hand shakes and bye's
+1. Voice controlled
 
 (Add more... I'm thinking of smth that can seem more like a research project than a common one)
 
