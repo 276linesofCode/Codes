@@ -24,10 +24,10 @@ setInterval(function toggle() {
 
       console.log(number);
       if (number == 1){
-        led.on();
+        led.off();
       }
       else{
-        led.off();
+        led.on();
       }
 
   });
