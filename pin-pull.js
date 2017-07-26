@@ -11,21 +11,25 @@ pin.pull(pullType,(error, buffer) => {
   if (error){
     throw error;
   }
-
 });
 
-pin.read(function(error, number){
 
-  if (error) {
-    throw error;
-  }
 
-    console.log(number);
-    if (number == 1){
-      led.off();
-    }
-    else{
-      led.on();
+setInterval(function toggle() {
+  pin.read(function(error, number){
+
+    if (error) {
+      throw error;
     }
 
-});
+      console.log(number);
+      if (number == 1){
+        led.on();
+      }
+      else{
+        led.off();
+      }
+
+  });
+
+}, 2000);
