@@ -32,4 +32,4 @@ setInterval(function toggle() {
 
   });
 
-}, 2000);
+}, 500);
