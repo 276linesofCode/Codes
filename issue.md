@@ -6,7 +6,7 @@ pin.pull(pullType, callback);
 ```
 
 
-Example of the `pin.pull(mode)` command using a pushbutton. The code example given below turns on the Blue LED of the Tessel module when the pushbutton is pressed and turns off the Blue LED when the pushbutton is not pressed.
+Example of the `pin.pull(mode)` command using a pushbutton. The code example given below turns on the Blue LED of the Tessel module when the pushbutton is pressed and turns off the Blue LED when the pushbutton is released.
 
 ```js
 var tessel= require('tessel'); // Import Tessel
