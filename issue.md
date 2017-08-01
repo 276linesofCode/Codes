@@ -1,7 +1,6 @@
 ### Usage
 ```js
-// Invoke this method to set the pull mode.
-// pullType can be - pullup, pulldown or none.
+// Invoke this method to set the pull mode. pullType can be - pullup, pulldown or none.
 pin.pull(pullType, callback);
 ```
 
