@@ -1,4 +1,4 @@
-var tessel = require('tessel');
+var tessel = require('tessel'); //Import tessel
 
 // Connect to device
 var port = tessel.port.A; // Select Port A of Tessel
@@ -19,12 +19,16 @@ i2c.transfer(new Buffer([0x0D]), numBytesToRead, function (error, dataReceived) 
   console.log('Buffer returned by I2C slave device ('+slaveAddress.toString(16)+'):', dataReceived);
 });
 
+
+//Now, try to print the accelerometer data using i2c.transfer
 i2c.transfer(new Buffer([0x01]), 6, function (error, dataReceived) {
     // Print data received (buffer of hex values)
     if (error) throw error;
 
+    //Create a blank array for the output
     var out=[];
     for (var i=0;i<3;i++){
+
       var gCount=(dataReceived[i*2] << 8) | dataReceived[(i*2)+1];
       gCount=gCount >> 4;
 
@@ -35,5 +39,5 @@ i2c.transfer(new Buffer([0x01]), 6, function (error, dataReceived) {
         out[i] = gCount / ((1<<12)/(2*2));
     }
 
-    console.log('The x, y, z values are :',out);
+    console.log('The x, y, z values are :',out); //Log the Array containing the x,y,z values
 });
