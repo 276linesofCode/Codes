@@ -6,7 +6,7 @@ Each slave device has a unique address. Transfer from and to master device is se
 
 Let us get the accelerometer values using the I2C protocol. We would be using the [accel-mma84](https://www.seeedstudio.com/Tessel-Accelerometer-Module-p-2223.html)
 
-![Fritzing Diagram](https://imgur.com/a/NiSqi)
+![Fritzing Diagram](http://i.imgur.com/zK4U4S3.png)
 
 ```js
 var tessel = require('tessel'); //Import tessel
