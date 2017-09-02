@@ -27,9 +27,9 @@ i2c.transfer(new Buffer([0x01]), 6, function (error, dataReceived) {
 
     //Create a blank array for the output
     var out=[];
-    for (var i=0;i<3;i++){
+    for (var i=0;i<3;i++){ //iterating for the x, y, z values
 
-      var gCount=(dataReceived[i*2] << 8) | dataReceived[(i*2)+1];
+      var gCount=(dataReceived[i*2] << 8) | dataReceived[(i*2)+1]; //Converting the 8 bit data into a 12 bit
       gCount=gCount >> 4;
 
       if (dataReceived[i*2] > 0x7F) {
