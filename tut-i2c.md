@@ -41,9 +41,8 @@ i2c.transfer(new Buffer([0x0D]), numBytesToRead, function (error, dataReceived) 
 
 
 //Now, try to print the accelerometer data using i2c.transfer
+// The register address for OUT_X_MSB is 0x01
 i2c.transfer(new Buffer([0x01]), 6, function (error, dataReceived) {
-
-    // Print data received (buffer of hex values)
     if (error) throw error;
     //Create a blank array for the output
     var out=[];
