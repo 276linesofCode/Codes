@@ -13,6 +13,9 @@ var tessel = require('tessel'); //Import tessel
 
 // Connect to device
 var port = tessel.port.A; // Select Port A of Tessel
+
+//This address of the Slave has been taken from https://github.com/tessel/accel-mma84/blob/master/index.js#L15
+//More about registers can be found at Page 19 of https://www.nxp.com/docs/en/data-sheet/MMA8452Q.pdf
 var slaveAddress = 0x1D; // Specefic for accelerometer module
 var i2c = new port.I2C(slaveAddress); // Initialize I2C communication
 
