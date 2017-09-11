@@ -41,7 +41,8 @@ i2c.transfer(new Buffer([0x0D]), numBytesToRead, function (error, dataReceived) 
 
 
 //Now, try to print the accelerometer data using i2c.transfer
-// The register address for OUT_X_MSB is 0x01
+// The register address for OUT_X_MSB is 0x01. This can be found at Page 19 of https://www.nxp.com/docs/en/data-sheet/MMA8452Q.pdf
+// 6 Bytes are used for pairwise MSB and LSB of the x,y and z axis
 i2c.transfer(new Buffer([0x01]), 6, function (error, dataReceived) {
     if (error) throw error;
     //Create a blank array for the output
