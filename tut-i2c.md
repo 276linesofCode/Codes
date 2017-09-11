@@ -30,6 +30,7 @@ i2c.read(numBytesToRead, function (error, dataReceived) {
 });
 
 // Read/Receive data over I2C using i2c.transfer
+// 0x0D is the WHO_AM_I Register which sends back an acknoledgement to the master for starting the communication
 i2c.transfer(new Buffer([0x0D]), numBytesToRead, function (error, dataReceived) {
 
     // Print data received (buffer of hex values)
