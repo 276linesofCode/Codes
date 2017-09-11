@@ -34,6 +34,7 @@ i2c.read(numBytesToRead, function (error, dataReceived) {
 i2c.transfer(new Buffer([0x0D]), numBytesToRead, function (error, dataReceived) {
 
     // Print data received (buffer of hex values)
+    // The returned buffer from the I2C slave device should be [0x2A]
   console.log('Buffer returned by I2C slave device ('+slaveAddress.toString(16)+'):', dataReceived);
   
 });
