@@ -95,6 +95,10 @@ i2c.transfer(new Buffer([0x0D]), numBytesToRead, function (error, dataReceived) 
   });
 ```
 
+### Sample Ouput
+
+![output](https://i.imgur.com/Dg462Jf.jpg)
+
 [Datasheet for accelerometer module](http://www.nxp.com/docs/en/data-sheet/MMA8452Q.pdf)
 
 [More Informatiom on I2C Communication](https://learn.sparkfun.com/tutorials/i2c)
